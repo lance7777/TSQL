@@ -5,7 +5,7 @@ USE [x_ANY_DATABASE_NAME_HERE] -- DEV NOTE (TJ) :: 2020-08-09 :: first script pr
 GO
 CREATE FUNCTION [dbo].[fcn_DebugInfo]
 (
-	@Message	varchar(512)
+	@Message	varchar(512)  
 )
 RETURNS varchar(768)
 AS
@@ -45,10 +45,10 @@ BEGIN
 	--
 	,		@SeparatorSymbol	varchar(10)		=	' :: '		    
 	--
-	,		@NestLevel					int		=	coalesce(try_convert(int, @@NESTLEVEL ,2),0) - 2  -- ignore first 2 levels (first "indent" at level 3)
+    ,       @NestLevel                  int     =   coalesce(try_convert(int, @@NESTLEVEL ,2),0) - 2  -- ignore first 2 levels (first "indent" at level 3)
 	--
-	,		@SpacesPerNestLevel			int		=	 4	-- extra "indent" spaces are added or removed as the execution session's nest level changes
-	,		@LastIndentedNestLevel		int		=	10	-- any values higher than this one are to be treated as if they're equal to this level instead
+    ,       @SpacesPerNestLevel         int     =    4  -- extra "indent" spaces are added or removed as the execution session's nest level changes
+    ,       @LastIndentedNestLevel      int     =   10  -- any values higher than this one are to be treated as if they're equal to this level instead
 	--
 	,		@IndentSpaces		varchar(100) 	-- value set below  // Sec. (2) 
 	--
@@ -67,23 +67,23 @@ BEGIN
 	--  (2)  Determine whitespace indent, if relevant (when a sub-procedure runs from within a calling procedure)
 	--
 	
-	SET	@IndentSpaces = SPACE( CASE WHEN @NestLevel <= 0 
-								    THEN 0 
-								    WHEN @NestLevel >= @LastIndentedNestLevel 
-								    THEN @LastIndentedNestLevel 
-								    ELSE @NestLevel 
-							   END * @SpacesPerNestLevel )
+    SET	@IndentSpaces = SPACE( CASE WHEN @NestLevel <= 0 
+                                    THEN 0 
+                                    WHEN @NestLevel >= @LastIndentedNestLevel 
+                                    THEN @LastIndentedNestLevel 
+                                    ELSE @NestLevel 
+                               END * @SpacesPerNestLevel ) 
 	;
 
 	--
 	--  (3)  Check input message 
 	--
 	
-	SET	@TextWithIndent = CASE WHEN @Message IS NULL 
-							   OR	@Message = '' 
-							   THEN '' 
-							   ELSE @IndentSpaces + @Message 
-						  END 
+    SET	@TextWithIndent = CASE WHEN @Message IS NULL 
+                               OR	@Message = '' 
+	                           THEN '' 
+                               ELSE @IndentSpaces + @Message 
+                          END 
 	;
 
 	--
