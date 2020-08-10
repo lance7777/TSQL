@@ -28,6 +28,7 @@ AS
 	Date			Action	
 	----------		-------------------------------------------------------------
 	2020-08-09		Initial version prepared to post @ GITHUB / lance7777 / TSQL.	
+	2020-08-10		Changed some TABs to SPACEs to make simple web/text format look better.
 
 **************************************************************************************/
 BEGIN
