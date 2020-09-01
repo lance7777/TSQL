@@ -1,5 +1,5 @@
 -- 
--- BEGIN // file :: 001_dbo_fcn_DebugInfo.sql 
+-- BEGIN FILE :: 001_dbo_fcn_DebugInfo.sql 
 -- 
 USE [x_ANY_DATABASE_NAME_HERE] -- DEV NOTE (TJ) :: 2020-08-09 :: first script prepared for GITHUB !!! 
 GO
@@ -102,5 +102,5 @@ BEGIN
 END
 GO
 -- 
--- END // file :: 001_dbo_fcn_DebugInfo.sql 
+-- END FILE :: 001_dbo_fcn_DebugInfo.sql 
 -- 
