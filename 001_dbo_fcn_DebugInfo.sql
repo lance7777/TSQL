@@ -5,10 +5,10 @@ USE [x_ANY_DATABASE_NAME_HERE] -- DEV NOTE (TJ) :: 2020-08-09 :: first script pr
 GO
 CREATE FUNCTION [dbo].[fcn_DebugInfo]
 (
-	@Message	varchar(512)  
+	@Message	varchar(512) 
 )
-RETURNS varchar(768)
-AS
+RETURNS varchar(768) 
+AS 
 /**************************************************************************************
 
 	Returns the current date and time (of the server, as text), 
@@ -27,11 +27,11 @@ AS
 
 	Date			Action	
 	----------		-------------------------------------------------------------
-	2020-08-09		Initial version prepared to post @ GITHUB / lance7777 / TSQL.	
-	2020-08-10		Changed some TABs to SPACEs to make simple web/text format look better.
+	2020-08-09		Initial version prepared to post @ GITHUB / lance7777 / TSQL. 
+	2020-08-10		Changed some TABs to SPACEs to make simple web/text format look better. 
 
 **************************************************************************************/
-BEGIN
+BEGIN 
 	
 	--
 	--  (0)  Initialize variables 
@@ -65,7 +65,7 @@ BEGIN
 	;
 	
 	--
-	--  (2)  Determine whitespace indent, if relevant (when a sub-procedure runs from within a calling procedure)
+	--  (2)  Determine whitespace indent, if relevant (when a sub-procedure runs from within a calling procedure) 
 	--
 	
     SET	@IndentSpaces = SPACE( CASE WHEN @NestLevel <= 0 
@@ -99,8 +99,8 @@ BEGIN
 	RETURN @Output 
 	; 
 
-END
-GO
+END 
+GO 
 -- 
 -- END FILE :: 001_dbo_fcn_DebugInfo.sql 
 -- 
