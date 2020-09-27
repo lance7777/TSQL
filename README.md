@@ -12,9 +12,9 @@ CONTENTS:
 0. dbo.fcn_DebugInfo :: A generic scalar-valued function which I create in all of my databases 
 
 
-1. a_METADATA :: A generic database useful to any server/instance 
+1. a_METADATA :: A generic database useful (I hope!) on any server/instance 
 
--- to be developed during September 2020 
+-- first functionality developed and released in September 2020 
 
 
 2. utility Schema :: Objects I like to include in all of my databases 
