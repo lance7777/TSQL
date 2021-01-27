@@ -1,7 +1,7 @@
 # TSQL
 Microsoft SQL Server scripting projects 
 
-Written by Tig3r (lance7777 @ GITHUB) 
+Written by lance7777 @ GITHUB 
 
 
 
@@ -29,9 +29,6 @@ CONTENTS:
 
 
 
-... & more to come ! 
-
-Thank you for visiting. 
+Thank you for visiting ! 
 
 Have a nice day. 
-
