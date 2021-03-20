@@ -9,7 +9,7 @@ Written by lance7777 @ GITHUB
 CONTENTS: 
 
 
-0. dbo.fcn_DebugInfo :: A generic scalar-valued function referenced by all of my stored procedures 
+0. dbo.fcn_DebugInfo :: A scalar-valued function referenced by all of my stored procedures 
 
 
 1. a_METADATA :: A generic database useful on any server/instance 
@@ -17,7 +17,7 @@ CONTENTS:
 -- first functionality developed and released in 2020 (September) 
 
 
-2. utility Schema :: Objects included in all of my databases 
+2. utility Schema :: Objects included in most of my databases 
 
 -- logic assumes adherence to my own style conventions, regarding object names and table structures 
 
