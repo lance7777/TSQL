@@ -9,24 +9,19 @@ Written by lance7777 @ GITHUB
 CONTENTS: 
 
 
-0. dbo.fcn_DebugInfo :: A scalar-valued function referenced by all of my stored procedures 
+1. a_METADATA :: Useful to generate documentation for databases and objects on any server/instance 
 
 
-1. a_METADATA :: A generic database useful on any server/instance 
-
--- first functionality developed and released in 2020 (September) 
+2. math Schema :: Functions for statistics, interpolation, optimization, and regression 
 
 
-2. utility Schema :: Objects included in most of my databases 
-
--- logic assumes adherence to my own style conventions, regarding object names and table structures 
+3. reference Schema :: A calendar table and a list of alphabet letters (basic examples of simple objects) 
 
 
-3. z_DDLEventAudit :: A generic database & server-level trigger for any server/instance 
-
--- originally built in late 2018 and uploaded here August 31st, 2020
+4. utility Schema :: A schema I include in almost all of my SQL Server databases 
 
 
+5. z_DDLEventAudit :: A logging database & server-level trigger for any server/instance 
 
 
 Thank you for visiting ! 
