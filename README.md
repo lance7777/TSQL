@@ -1,10 +1,6 @@
 # TSQL
 Microsoft SQL Server scripting projects 
 
-Written by lance7777 @ GITHUB 
-
-
-
 
 CONTENTS: 
 
@@ -23,7 +19,3 @@ CONTENTS:
 
 5. z_DDLEventAudit :: A logging database & server-level trigger for any server/instance 
 
-
-Thank you for visiting ! 
-
-Have a nice day. 
